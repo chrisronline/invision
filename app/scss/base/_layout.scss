@@ -1,0 +1,30 @@
+.layout-middle {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.layout-wide {
+  margin-left: 9%;
+  margin-right: 8%;
+}
+@media (max-width: 1200px) {
+  .layout-middle {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.col-2,
+.col-3,
+.col-4,
+.col-8,
+.col-9,
+.col-10 {
+  float: left;
+}
+
+.col-2 { width: 15%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33%; }
+.col-8 { width: 66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83%; }

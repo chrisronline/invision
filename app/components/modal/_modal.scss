@@ -1,0 +1,29 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background-color: $color-modalBackdrop;
+}
+.modal-body {
+  background-color: $color-gray--lighter;
+  border-radius: 4px;
+  width: 575px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  padding: 20px;
+}
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+@import "modals/chat/chat";

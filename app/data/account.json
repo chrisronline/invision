@@ -1,0 +1,20 @@
+{
+  "id": 1,
+  "name": "Jessica Tuan",
+  "tinyIcon": "images/users/jessica.tiny.png",
+  "icon": "images/users/jessica.png",
+  "email": "jessica@mail.com",
+  "password": "superSecret",
+  "notifications": {
+    "postFavorited": true,
+    "mentioned": true,
+    "postReply": true,
+    "newFollower": true
+  },
+  "privacy": {
+    "tagging": "all",
+    "location": true,
+    "findByEmail": true,
+    "customAds": true
+  }
+}

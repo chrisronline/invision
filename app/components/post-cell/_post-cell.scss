@@ -1,0 +1,19 @@
+.post-cell {
+  width: 375px;
+  border: solid 1px $color-gray--lighter;
+  border-radius: 4px;
+  margin: 0 10px 10px 10px;
+}
+.post-cell-header {
+  margin: 25px 25px 15px 25px;
+}
+.post-cell-left {
+  width: 18%;
+}
+.post-cell-right {
+  width: 80%;
+}
+.post-cell-image {
+  max-width: 100%;
+  margin-bottom: -5px;
+}

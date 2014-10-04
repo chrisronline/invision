@@ -1,0 +1,5 @@
+app/bower_components
+.DS_Store
+node_modules
+app/css
+app/js

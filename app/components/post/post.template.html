@@ -1,0 +1,39 @@
+<div class="post-content">
+  <div class="post-left inline-block-top">
+    <img ng-src="{{ post.author.picture }}" class="post-picture"/>
+  </div>
+  <div class="post-right inline-block-top">
+    <div class="post-header">
+      <h3 class="post-author">{{post.author.name}}</h3>
+      <div class="post-meta">
+        <div class="icon reply-icon"></div>
+        <div class="icon favorite-icon"></div>
+        <span class="post-date">{{post.date}}</span>
+      </div>
+    </div>
+    <p class="post-message" ng-bind-html="post.message"></p>
+    <img class="post-image" ng-if="post.image" ng-src="{{ post.image }}"/>
+    <!-- This is just an image for now -->
+    <img class="post-image" ng-if="post.video" ng-src="{{ post.video }}"/>
+    <div ng-if="post.original && post.commentsEnabled">
+      <a class="post-expand cursor-pointer" ng-if="post.original && !expanded" ng-click="toggleExpanded()">
+        <span class="inline-block-top">Expand</span>
+        <i class="caret-down-icon icon"></i>
+      </a>
+      <a class="post-expand cursor-pointer" ng-if="post.original && expanded" ng-click="toggleExpanded()">
+        <span>Collapse</span>
+        <i class="caret-up-icon icon"></i>
+      </a>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+</div>
+<div class="post-expanded" ng-if="expanded">
+  <div class="post-comments" ng-if="post.comments.length">
+    <div class="post-comment" ng-repeat="post in post.comments track by post.id"
+       ng-include="'components/post/post.template.html'"></div>
+  </div>
+  <div class="post-actions" ng-if="post.original">
+    <input type="text" class="textfield post-action-reply-input" placeholder="Reply..."/>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InVision Programming Challenge</title>
+  <link rel="stylesheet" href="./css/app.css"/>
+</head>
+<body ng-app="invision">
+
+  <header class="app-header" ng-include="'components/header/header.template.html'" ng-controller="HeaderCtrl"></header>
+
+  <div class="content" ng-view></div>
+
+  <footer>
+
+  </footer>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="./bower_components/angularjs/angular.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-route/angular-route.js"></script>
+  <script type="text/javascript" src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script type="text/javascript" src="./bower_components/moment/moment.js"></script>
+  <script type="text/javascript" src="./bower_components/lodash/dist/lodash.js"></script>
+  <script type="text/javascript" src="./js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+@import "base/colors";
+@import "base/fonts";
+@import "base/icons";
+@import "base/base";
+@import "base/layout";
+@import "base/buttons";
+
+@import "../components/header/header";
+@import "../components/dashboard/scss/dashboard";
+@import "../components/post/post";
+@import "../components/post-cell/post-cell";
+@import "../components/modal/modal";
+@import "../components/settings/settings";

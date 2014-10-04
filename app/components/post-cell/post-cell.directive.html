@@ -1,0 +1,13 @@
+<div class="post-cell">
+  <div class="post-cell-header">
+    <div class="post-cell-left inline-block-top">
+      <img ng-src="{{ post.author.picture }}" class="post-cell-author-picture"/>
+    </div>
+    <div class="post-cell-right inline-block-top">
+      <h3 class="post-author">{{post.author.name}}</h3>
+      <p class="post-message" ng-bind-html="post.message"></p>
+    </div>
+  </div>
+  <img class="post-cell-image" ng-src="{{ post.image }}" ng-if="post.image"/>
+  <img class="post-cell-image" ng-src="{{ post.video }}" ng-if="post.video"/>
+</div>

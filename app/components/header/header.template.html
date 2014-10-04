@@ -1,0 +1,41 @@
+<div class="app-header-left">
+  <div class="brand">
+    <div class="logo"></div>
+    <h1 class="brand-title">
+      <span class="brand-title-main">simply</span>
+      <span class="brand-title-alt">social</span>
+    </h1>
+  </div>
+</div>
+
+<div class="app-header-right">
+  <div class="chat">
+    <div class="chat-icon icon cursor-pointer" ng-click="createChat()"></div>
+  </div>
+
+  <div class="search">
+    <input type="text" class="search-input"/>
+    <div class="search-icon icon"></div>
+  </div>
+
+  <div class="user" ng-mouseover="dropdownVisible=true" ng-mouseleave="dropdownVisible=false">
+    <img ng-src="{{account.tinyIcon}}">
+    <div class="caret-down-icon icon"></div>
+    <div class="dropdown" ng-show="dropdownVisible">
+      <ul class="list">
+        <li class="list-item">
+          <a href="#/profile" class="link">Profile</a>
+        </li>
+        <li class="list-item">
+          <a href="#/followered" class="link">Followers</a>
+        </li>
+        <li class="list-item">
+          <a href="#/following" class="link">Following</a>
+        </li>
+        <li class="list-item">
+          <a href="#/settings" class="link">Settings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

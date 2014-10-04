@@ -1,0 +1,96 @@
+.app-header {
+  background-color: #262728;
+  height: 60px;
+
+  .logo {
+    display: inline-block;
+    background: transparent url('../images/logo.png');
+    width: 33px;
+    height: 29px;
+  }
+
+  .app-header-left {
+    float: left;
+    margin-top: 17px;
+    margin-left: 65px;
+  }
+
+  .app-header-right {
+    float: right;
+    margin-top: 16px;
+    margin-right: 70px;
+  }
+
+  .brand,
+  .chat,
+  .search,
+  .user {
+    display: inline-block;
+    vertical-align: middle;
+    // font-size: 0; /* offset the implicit height from the global font - bad? */
+  }
+
+  .user {
+    height: 40px;
+  }
+
+  .brand-title {
+    display: inline-block;
+    color: $color-gray;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 0 0 0 5px;
+    vertical-align: top;
+    padding-top: 7px;
+  }
+
+  .brand-title-alt {
+    color: $color-gray--light;
+    margin-left: -0.4rem;
+  }
+
+  .search {
+    margin-left: 18px;
+    margin-right: 15px;
+    position: relative;
+  }
+
+  .search-input {
+    background: transparent;
+    border: solid 1px $color-gray--dark;
+    border-radius: 4px;
+    height: 26px;
+    width: 200px;
+  }
+  .search-input:focus {
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+  }
+
+  .caret-down-icon {
+    vertical-align: top;
+    margin-top: 12px;
+    margin-left: 8px;
+  }
+
+  .dropdown {
+    background-color: $color-settingsDropdown;
+    position: absolute;
+    right: 60px;
+    top: 55px;
+    border-radius: 4px;
+  }
+
+  .list-item {
+    padding: 10px 20px 10px 10px;
+    border-bottom: solid 1px $color-gray--light;
+  }
+
+  .link {
+    color: $color-gray--light;
+  }
+}

@@ -1,0 +1,28 @@
+.page-dashboard {
+  .header {
+    background: transparent url('../images/dashboard/header.png');
+    height: 423px;
+    text-align: center;
+  }
+  .page-dashboard-nav {
+    position: relative;
+    top: -51px;
+  }
+  .list-horizontal-item {
+    padding: 15px 5px;
+  }
+
+  .page-dashboard-content {
+    clear: both;
+  }
+
+  .page-dashboard-footer {
+    .link {
+      color: $color-lightgreen;
+    }
+  }
+
+  @import 'dashboard-message';
+  @import 'dashboard-nav';
+  @import 'dashboard-pageoptions';
+}

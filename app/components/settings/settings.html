@@ -1,0 +1,105 @@
+<div class="page-settings layout-middle">
+  <h2 class="page-settings-header">Settings</h2>
+  <form>
+    <div class="page-settings-account">
+      <h3>Account</h3>
+      <div class="col-3">
+        <img ng-src="{{account.icon}}"/>
+        <button class="btn btn-default">Change</button>
+      </div>
+      <div class="col-9">
+        <div class="form-control">
+          <div class="control-icon icon user-icon"></div>
+          <input type="text" class="textfield icon-textfield" ng-model="account.name"/>
+        </div>
+        <div class="form-control">
+          <div class="control-icon icon email-icon"></div>
+          <input type="email" class="textfield icon-textfield" ng-model="account.email"/>
+        </div>
+        <div class="form-control">
+          <div class="control-icon icon password-icon"></div>
+          <input type="password" class="textfield icon-textfield" ng-model="account.password"/>
+          <a class="cursor-pointer control-cta">change</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-settings-notifications">
+      <h3 class="space-below">Notifications</h3>
+      <div class="form-control">
+        <input type="checkbox" class="switch" id="notification-postFavorited" ng-model="account.notifications.postFavorited">
+        <label for="notification-postFavorited">
+          <span class="switch-control"><span class="switch-control-circle"></span></span>
+          email me when my posts are marked as favorites
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="checkbox" class="switch" id="notification-mentioned" ng-model="account.notifications.mentioned">
+        <label for="notification-mentioned">
+          <span class="switch-control"><span class="switch-control-circle"></span></span>
+          email me when I'm mentioned
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="checkbox" class="switch" id="notification-postReply" ng-model="account.notifications.postReply">
+        <label for="notification-postReply">
+          <span class="switch-control"><span class="switch-control-circle"></span></span>
+          email me when I get a reply
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="checkbox" class="switch" id="notification-newFollower" ng-model="account.notifications.newFollower">
+        <label for="notification-newFollower">
+          <span class="switch-control"><span class="switch-control-circle"></span></span>
+          email me when someone follows me
+        </label>
+      </div>
+    </div>
+    <div class="page-settings-privacy">
+      <h3 class="space-below">Privacy</h3>
+      <div class="form-control">
+        <input type="radio" name="tagging" value="all" class="radio" id="privacy-tagging--all" ng-model="account.privacy.tagging">
+        <label for="privacy-tagging--all">
+          <span class="radio-control"><span class="radio-control-circle"></span></span>
+          allow anyone to tag me
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="radio" name="tagging" value="followers" class="radio" id="privacy-tagging--followers" ng-model="account.privacy.tagging">
+        <label for="privacy-tagging--followers">
+          <span class="radio-control"><span class="radio-control-circle"></span></span>
+          only allow people I follow to tag me
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="radio" name="tagging" value="none" class="radio" id="privacy-tagging--none" ng-model="account.privacy.tagging">
+        <label for="privacy-tagging--none">
+          <span class="radio-control"><span class="radio-control-circle"></span></span>
+          don't allow anyone to tag me
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="radio" class="radio" id="privacy-location" ng-model="account.privacy.location">
+        <label for="privacy-location">
+          <span class="radio-control"><span class="radio-control-circle"></span></span>
+          add a location to my posts
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="radio" class="radio" id="privacy-findByEmail" ng-model="account.privacy.findByEmail">
+        <label for="privacy-findByEmail">
+          <span class="radio-control"><span class="radio-control-circle"></span></span>
+          let others find me by my email address
+        </label>
+      </div>
+      <div class="form-control">
+        <input type="radio" class="radio" id="privacy-customAds" ng-model="account.privacy.customAds">
+        <label for="privacy-customAds">
+          <span class="radio-control"><span class="radio-control-circle"></span></span>
+          tailor ads based on my information
+        </label>
+      </div>
+    </div>
+    <hr/>
+    <button class="btn btn-primary">Save Changes</button>
+  </form>
+</div>
