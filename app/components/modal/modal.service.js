@@ -44,7 +44,7 @@
         modal.remove();
         modal = null;
       }
-    }
+    };
 
     return service;
   }

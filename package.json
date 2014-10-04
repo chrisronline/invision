@@ -12,6 +12,8 @@
     "gulp": "~3.8.8",
     "gulp-sass": "~1.0.0",
     "gulp-concat": "~2.4.1",
-    "browser-sync": "~1.5.2"
+    "browser-sync": "~1.5.2",
+    "gulp-jshint": "~1.8.5",
+    "jshint-stylish": "~1.0.0"
   }
 }

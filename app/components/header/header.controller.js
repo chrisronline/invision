@@ -13,7 +13,7 @@
     AccountService.getAccount()
       .then(function(account) {
         $scope.account = account;
-      })
+      });
   }
 
   angular.module('invision')

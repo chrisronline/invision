@@ -15,7 +15,7 @@
         })
         .then(function(response) {
           return response.data;
-        })
+        });
     }
 
     service.get = function(url) {

@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
+var jshint = require('gulp-jshint');
 
 var paths = {
   sass: {
@@ -50,6 +51,12 @@ gulp.task('browser-sync', function() {
       baseDir: 'app'
     }
   });
+});
+
+gulp.task('lint', function() {
+  return gulp.src(paths.js.src)
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'));
 });
 
 gulp.task('default', ['sass', 'js', 'watch', 'browser-sync']);
