@@ -79,7 +79,13 @@
 
 .post-image {
   margin-left: -18%;
-  margin-bottom: -30px;
+  margin-bottom: -28px;
+  max-width: 100%;
+}
+@media (max-width: 1200px) {
+  .post-image {
+    margin-left: 0;
+  }
 }
 
 .post-expand {
