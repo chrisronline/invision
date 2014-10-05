@@ -1,9 +1,13 @@
+.page-dashboard-header {
+  background: transparent url('../images/dashboard/header.png') -30px;
+  height: 423px;
+  text-align: center;
+}
 .page-dashboard {
-  .header {
-    background: transparent url('../images/dashboard/header.png');
-    height: 423px;
-    text-align: center;
-  }
+  @import 'dashboard-message';
+  @import 'dashboard-nav';
+  @import 'dashboard-pageoptions';
+
   .page-dashboard-nav {
     position: relative;
     top: -51px;
@@ -21,8 +25,4 @@
       color: $color-lightgreen;
     }
   }
-
-  @import 'dashboard-message';
-  @import 'dashboard-nav';
-  @import 'dashboard-pageoptions';
 }
