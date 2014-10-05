@@ -2,7 +2,6 @@
   border: solid 1px $color-gray--lighter;
   border-radius: 4px;
   margin-bottom: 30px;
-  color: $color-subheadline;
 }
 .post-content,
 .post-actions {
@@ -23,6 +22,7 @@
   font-weight: 100;
   margin-top: 1px;
   line-height: 24px;
+  color: $color-subheadline;
   /** Not performant */
   a {
     color: $color-gray--light;

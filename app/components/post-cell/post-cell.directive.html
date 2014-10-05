@@ -1,5 +1,5 @@
 <div class="post-cell">
-  <div class="post-cell-header">
+  <div class="post-cell-header clearfix">
     <div class="post-cell-left inline-block-top">
       <img ng-src="{{ post.author.picture }}" class="post-cell-author-picture"/>
     </div>
@@ -10,4 +10,9 @@
   </div>
   <img class="post-cell-image" ng-src="{{ post.image }}" ng-if="post.image"/>
   <img class="post-cell-image" ng-src="{{ post.video }}" ng-if="post.video"/>
+  <div class="post-meta">
+    <div class="icon reply-icon"></div>
+    <div class="icon favorite-icon"></div>
+    <span class="post-date">{{post.date}}</span>
+  </div>
 </div>

@@ -3,6 +3,7 @@
   border: solid 1px $color-gray--lighter;
   border-radius: 4px;
   margin: 0 10px 10px 10px;
+  color: $color-subheadline;
 }
 .post-cell-header {
   margin: 25px 25px 15px 25px;
@@ -15,5 +16,13 @@
 }
 .post-cell-image {
   max-width: 100%;
-  margin-bottom: -5px;
+}
+
+.post-cell .post-author,
+.post-cell .post-meta {
+  float: none;
+}
+.post-cell .post-meta {
+  margin: 20px;
+  text-align: right;
 }
