@@ -23,7 +23,10 @@
   <div class="user inline-block-top" ng-mouseover="dropdownVisible=true" ng-mouseleave="dropdownVisible=false">
     <img ng-src="{{account.tinyIcon}}">
     <div class="caret-down-icon icon"></div>
-    <div class="dropdown" ng-show="dropdownVisible">
+    <div class="dropdown-caret" ng-show="dropdownVisible">
+      <div class="caret-up-icon icon"></div>
+    </div>
+    <div class="dropdown" ng-show="dropdownVisible" ng-click="dropdownVisible=false">
       <ul class="list">
         <li class="list-item">
           <a href="#/profile" class="link">Profile</a>
