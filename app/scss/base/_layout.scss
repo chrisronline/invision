@@ -13,18 +13,22 @@
   }
 }
 
+.col-1,
 .col-2,
 .col-3,
 .col-4,
 .col-8,
 .col-9,
-.col-10 {
+.col-10,
+.col-11 {
   float: left;
 }
 
+.col-1 { width: 8%; }
 .col-2 { width: 15%; }
 .col-3 { width: 25%; }
 .col-4 { width: 33%; }
 .col-8 { width: 66%; }
 .col-9 { width: 75%; }
 .col-10 { width: 83%; }
+.col-11 { width: 92%; }

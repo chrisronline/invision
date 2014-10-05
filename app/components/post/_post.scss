@@ -2,21 +2,16 @@
   border: solid 1px $color-gray--lighter;
   border-radius: 4px;
   margin-bottom: 30px;
+  color: $color-subheadline;
 }
 .post-content,
 .post-actions {
-  padding: 20px;
+  padding: 25px;
 }
-.post-content {
-}
-.post-left {
-  width: 9%;
-}
-.post-right {
-  width: 90%;
-}
-.post-comments {
-  clear: both;
+
+.post-content .col-10 {
+  margin-left: -4%;
+  width: 89%;
 }
 
 .post-comments,
@@ -24,7 +19,10 @@
   background-color: $color-offwhite;
 }
 .post-message {
-  clear: left;
+  font-size: 16px;
+  font-weight: 100;
+  margin-top: 1px;
+  line-height: 24px;
   /** Not performant */
   a {
     color: $color-gray--light;
@@ -37,12 +35,25 @@
 
 .post-meta {
   float: right;
+  color: $color-gray--light;
 }
 .post-author {
   margin: 0 0 10px 0;
   float: left;
+  color: $color-postAuthor;
+  font-size: 17px;
+  font-weight: 100;
 }
 
+.post-meta .icon,
+.post-meta .post-date {
+  margin-left: 20px;
+}
+
+
+.post-comment .post-content {
+  padding-bottom: 5px;
+}
 .post-comment .post-content,
 .post-actions {
   border-top: solid 1px $color-offwhite--darker;
@@ -52,15 +63,27 @@
   text-align: center;
 }
 .post-action-reply-input {
-  width: 85%;
+  width: 100%;
+  border-color: $color-gray--lighter;
+  color: $color-gray--lighter;
+  &::-webkit-input-placeholder {
+    color: $color-gray--lighter;
+  }
 }
 
 .post .caret-down-icon,
 .post .caret-up-icon {
   margin-top: 5px;
+  margin-left: 5px;
 }
 
 .post-image {
-  margin-left: -15%;
-  margin-bottom: -24px;
+  margin-left: -18%;
+  margin-bottom: -30px;
+}
+
+.post-expand {
+  color: $color-gray--light;
+  font-size: 13px;
+  font-weight: 100;
 }
