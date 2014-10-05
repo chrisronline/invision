@@ -1,18 +1,12 @@
 .app-header {
   background-color: #262728;
   height: 60px;
-
-  .logo {
-    display: inline-block;
-    background: transparent url('../images/logo.png');
-    width: 33px;
-    height: 29px;
-  }
+  box-sizing: border-box;
 
   .app-header-left {
     float: left;
-    margin-top: 17px;
-    margin-left: 65px;
+    margin-top: 18px;
+    margin-left: 77px;
   }
 
   .app-header-right {
@@ -21,32 +15,24 @@
     margin-right: 70px;
   }
 
-  .brand,
-  .chat,
-  .search,
-  .user {
-    display: inline-block;
-    vertical-align: middle;
-    // font-size: 0; /* offset the implicit height from the global font - bad? */
-  }
-
-  .user {
-    height: 40px;
-  }
-
   .brand-title {
-    display: inline-block;
-    color: $color-gray;
+    margin: -2px 0 0 6px;
+    // padding-top: 7px;
+  }
+  .brand-title-link {
+    color: $color-subheadline;
     font-size: 18px;
     font-weight: 100;
-    margin: 0 0 0 5px;
-    vertical-align: top;
-    padding-top: 7px;
   }
 
   .brand-title-alt {
     color: $color-gray--light;
     margin-left: -0.4rem;
+  }
+
+
+  .user {
+    height: 40px;
   }
 
   .search {
