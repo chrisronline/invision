@@ -1,9 +1,21 @@
 .btn {
+  font-family: 'ProximaNova';
+  font-size: 16px;
+  font-weight: 500;
   border-radius: 4px;
-  padding: 8px 15px;
+  padding: 5px 21px;
   border: none;
+  height: 40px;
+  box-sizing: border-box;
+}
+.btn-sm {
+  height: 25px;
 }
 .btn-primary {
   background-color: $color-green;
   color: $color-white;
+}
+.btn-default {
+  background-color: $color-white;
+  border: solid 1px $color-gray--light;
 }

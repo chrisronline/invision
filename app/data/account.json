@@ -4,7 +4,7 @@
   "tinyIcon": "images/users/jessica.tiny.png",
   "icon": "images/users/jessica.png",
   "email": "jessica@mail.com",
-  "password": "superSecret",
+  "password": "abcdefg",
   "notifications": {
     "postFavorited": true,
     "mentioned": true,

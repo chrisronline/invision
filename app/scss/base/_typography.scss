@@ -1,0 +1,21 @@
+.headline {
+  margin: 45px 0;
+  font-size: 32px;
+  font-weight: 100;
+  color: $color-headline;
+}
+.subheadline {
+  font-family: 'ProximaNova';
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: $color-subheadline;
+}
+.btn-subtle-text {
+  color: $color-gray--light;
+  font-size: 13px;
+  font-weight: 100;
+}
+.lowercase {
+  text-transform: lowercase;
+}
