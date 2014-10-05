@@ -21,8 +21,29 @@
   }
 
   .page-dashboard-footer {
+    text-align: center;
+
     .link {
       color: $color-lightgreen;
+      font-size: 16px;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: $color-gray;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .copyright-year,
+    .copyright-copysign {
+      font-size: 12px;
+    }
+
+    .link,
+    .copyright {
+      font-size: 16px;
+      font-variant: small-caps;
+      font-weight: 500;
     }
   }
 }

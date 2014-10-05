@@ -3,3 +3,4 @@
 - Pixel Perfect
 - Refactor CSS to use as little specific classes as possible (generic, reusable classes are win)
 - Auto-prefixer support for CSS (for FF, IE9, and Chrome)
+- The footer with links need some work
