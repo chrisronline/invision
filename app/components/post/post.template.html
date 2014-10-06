@@ -1,21 +1,27 @@
-<div class="post-content pad-large clearfix">
-  <div class="col-2">
-    <img ng-src="{{ post.author.picture }}" class="post-picture"/>
-  </div>
-  <div class="col-10 col-10--pushedLeft">
-    <div class="post-header clearfix">
-      <h3 class="space-below--small pull-left subtle-text--blue nospace-tlr">{{post.author.name}}</h3>
-      <div class="pull-right color-graylight">
-        <div class="icon reply-icon space-left--medium"></div>
-        <div class="icon favorite-icon space-left--medium"></div>
-        <span class="space-left--medium">{{post.date}}</span>
-      </div>
+<div class="post-content pad-large--adjusted">
+  <div class="clearfix">
+    <div class="col-2">
+      <img ng-src="{{ post.author.picture }}" class="post-picture"/>
     </div>
-    <p class="post-message" ng-bind-html="post.message"></p>
-    <img class="post-image" ng-if="post.image" ng-src="{{ post.image }}"/>
-    <!-- This is just an image for now -->
-    <img class="post-image" ng-if="post.video" ng-src="{{ post.video }}"/>
-    <div ng-if="post.original && post.commentsEnabled">
+    <div class="col-10 col-10--pushedLeft">
+      <div class="post-header clearfix">
+        <h3 class="space-below--small pull-left subtle-text--blue nospace-tlr">{{post.author.name}}</h3>
+        <div class="pull-right color-graylight">
+          <div class="icon reply-icon space-left--medium"></div>
+          <div class="icon favorite-icon space-left--medium"></div>
+          <span class="space-left--medium">{{post.date}}</span>
+        </div>
+      </div>
+      <p class="post-message" ng-bind-html="post.message"></p>
+    </div>
+  </div>
+</div>
+<img class="post-image space-above--xsmall space-belowNegative--xsmall" ng-if="post.image" ng-src="{{ post.image }}"/>
+<!-- This is just an image for now -->
+<img class="post-image space-above--xsmall space-belowNegative--xsmall" ng-if="post.video" ng-src="{{ post.video }}"/>
+<div class="clearfix">
+  <div class="col-10 col-10--pushedLeft col-offset-2">
+    <div ng-if="post.original && post.commentsEnabled" class="space-above--xsmall space-below--medium">
       <a class="subtle-text cursor-pointer" ng-if="post.original && !expanded" ng-click="toggleExpanded()">
         <span class="inline-block-top">Expand</span>
         <i class="caret-down-icon icon space-left--xsmall space-above--xsmall"></i>

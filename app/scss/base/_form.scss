@@ -7,7 +7,7 @@
   background: $color-white;
   font-size: 17px;
   color: $color-gray--blue;
-  width: 365px;
+  width: 100%;
   box-sizing: border-box;
 }
 .passwordfield {
@@ -40,7 +40,7 @@
 .control-cta {
   position: absolute;
   top: 35%;
-  right: 75px;
+  right: 5px;
   color: $color-gray--light;
 }
 

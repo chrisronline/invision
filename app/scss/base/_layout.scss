@@ -6,10 +6,22 @@
   margin-left: 9%;
   margin-right: 8%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+  .layout-middle {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (max-width: 700px) {
   .layout-middle {
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .layout-middle {
+    margin-left: 0%;
+    margin-right: 0%;
   }
 }
 
@@ -34,6 +46,10 @@
 .col-11 { width: 92%; }
 
 .col-10--pushedLeft {
-  margin-left: -4%;
-  width: 89%;
+  margin-left: -1%;
+  width: 84%;
+}
+
+.col-offset-2 {
+  margin-left: 18%;
 }

@@ -1,3 +1,4 @@
+.space-belowNegative--xsmall { margin-bottom: -5px; }
 .space-below--xsmall { margin-bottom: 5px; }
 .space-below--small { margin-bottom: 10px; }
 .space-below--medium { margin-bottom: 20px; }
@@ -6,6 +7,7 @@
 
 .space-aboveNegative--xsmall { margin-top: -5px; }
 .space-above--xsmall { margin-top: 5px; }
+.space-above--medium { margin-top: 20px; }
 .space-above--large { margin-top: 28px; }
 .space-above--xlarge { margin-top: 50px; }
 .space-above--xxlarge { margin-top: 94px; }
@@ -31,3 +33,4 @@
 .pad-below--small { padding-bottom: 5px; }
 .pad-v3-h1 { padding: 15px 5px; }
 .pad-large { padding: 25px; }
+.pad-large--adjusted { padding: 25px 25px 20px 25px; }
