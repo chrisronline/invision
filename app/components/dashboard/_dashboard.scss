@@ -25,7 +25,11 @@
   font-weight: 100;
   padding: 0;
 }
-.message-box .textfield::-webkit-input-placeholder {
+.message-box .textfield,
+.message-box .textfield::-webkit-input-placeholder,
+.message-box .textfield::-moz-placeholder,
+.message-box .textfield::-moz-placeholder,
+.message-box .textfield:-ms-input-placeholder {
   color: $color-white;
   -webkit-font-smoothing: antialiased;
 }
