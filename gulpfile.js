@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
 var jshint = require('gulp-jshint');
+var autoprefixer = require('gulp-autoprefixer');
 
 var paths = {
   sass: {
@@ -22,6 +23,9 @@ gulp.task('sass', function () {
   gulp.src(paths.sass.src)
     .pipe(sass())
     .pipe(concat('app.css'))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 9'],
+    }))
     .pipe(gulp.dest(paths.sass.dest))
     .pipe(browserSync.reload({stream:true}));
 });
@@ -42,6 +46,15 @@ gulp.task('watch', function() {
   gulp.watch(paths.sass.src, ['sass']);
   gulp.watch(paths.js.src, ['js']);
   gulp.watch(paths.html.src, ['html']);
+});
+
+gulp.task('autoprefix', function () {
+    return gulp.src(paths.sass.dest + '/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions', 'ie >= 9'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('browser-sync', function() {
