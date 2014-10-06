@@ -5,7 +5,6 @@
     return {
       restrict: 'A',
       link: function($scope, $element, $attrs) {
-        console.log('hi');
         $element.placeholder();
       }
     };
