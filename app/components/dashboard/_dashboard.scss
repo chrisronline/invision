@@ -25,14 +25,15 @@
   font-weight: 100;
   padding: 0;
 }
-.message-box .textfield,
-.message-box .textfield::-webkit-input-placeholder,
-.message-box .textfield::-moz-placeholder,
-.message-box .textfield::-moz-placeholder,
-.message-box .textfield:-ms-input-placeholder {
+
+@mixin messageBoxPlaceholderStyle() {
   color: $color-white;
   -webkit-font-smoothing: antialiased;
 }
+.message-box .textfield::-webkit-input-placeholder { @include messageBoxPlaceholderStyle() }
+.message-box .textfield:-moz-placeholder { @include messageBoxPlaceholderStyle() }
+.message-box .textfield::-moz-placeholder { @include messageBoxPlaceholderStyle() }
+.message-box .textfield:-ms-input-placeholder { @include messageBoxPlaceholderStyle() }
 
 .page-dashboard-nav-item {
   box-sizing: border-box;
