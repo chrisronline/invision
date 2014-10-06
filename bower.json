@@ -14,7 +14,6 @@
     "angularjs": "~1.2.26",
     "lodash": "~2.4.1",
     "angular-route": "~1.2.26",
-    "moment": "~2.8.3",
     "angular-sanitize": "~1.2.26",
     "jquery-placeholder": "~2.0.8",
     "jquery": "~2.1.1"
