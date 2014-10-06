@@ -14,10 +14,10 @@
 .modal-body {
   background-color: $color-gray--lighter;
   border-radius: 4px;
-  width: 575px;
   position: absolute;
-  top: 30%;
-  left: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   padding: 25px 25px 18px 25px;
 }
 .modal-close {

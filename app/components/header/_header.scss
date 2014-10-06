@@ -14,6 +14,17 @@
   margin-top: 14px;
   margin-right: 62px;
 }
+@media (max-width: 700px) {
+  .app-header-left {
+    margin-left: 5px;
+  }
+  .app-header-right {
+    margin-right: 5px;
+  }
+  .app-header-dropdown {
+    right: 0 !important;
+  }
+}
 
 .brand-title {
   margin: -2px 0 0 6px;
@@ -33,7 +44,6 @@
   border: solid 1px $color-gray--dark;
   border-radius: 4px;
   height: 30px;
-  width: 200px;
   color: $color-white;
 }
 .app-header-search-icon {
@@ -44,6 +54,15 @@
 .app-header-list-item {
   padding: 9px 35px 7px 10px;
   border-bottom: solid 1px $color-gray--lighter;
+}
+@media (max-width: 500px) {
+  .app-header-search-input {
+    display: none;
+  }
+  .app-header-search-icon {
+    position: static;
+    margin-top: 5px;
+  }
 }
 
 .app-header-caret-down {
