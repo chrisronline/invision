@@ -18,7 +18,7 @@
     service.getPosts = function() {
       return RestService.get('data/posts.json')
         .then(function(posts) {
-          return _.map(posts, formatPost)
+          return _.map(posts, formatPost);
         });
     };
 
