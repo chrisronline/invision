@@ -6,14 +6,13 @@
   border: solid 1px $color-gray--light;
   background: $color-white;
   font-size: 17px;
-  color: $color-headline;
+  color: $color-gray--blue;
   width: 365px;
   box-sizing: border-box;
 }
 .passwordfield {
   letter-spacing: 3px;
 }
-
 .icon-textfield {
   padding-left: 35px;
 }
@@ -31,15 +30,13 @@
 
 .form-label {
   font-size: 17px;
-  color: $color-subheadline;
+  color: $color-gray--lightblue;
 }
-
 .control-icon {
   position: absolute;
   top: 25%;
   left: 10px;
 }
-
 .control-cta {
   position: absolute;
   top: 35%;
@@ -101,8 +98,4 @@
   background: $color-white;
   margin-top: 1px;
   margin-left: 1px;
-}
-
-.settings-field {
-  color: $color-headline;
 }

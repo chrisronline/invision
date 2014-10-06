@@ -1,0 +1,64 @@
+.page-dashboard-header {
+  background: transparent url('../images/dashboard/header.png') -30px;
+  height: 423px;
+  text-align: center;
+}
+
+.message-box {
+  width: 575px;
+  height: 155px;
+  box-sizing: border-box;
+  background-color: $color-lightgreen;
+  border-radius: 4px;
+  position: relative;
+  top: 9rem;
+  padding: 35px 30px 30px 30px;
+  opacity: 0.5;
+  color: $color-white;
+}
+.message-box .textfield {
+  border: none;
+  background: transparent;
+  height: 50px;
+  width: 100%;
+  color: $color-white;
+  font-size: 32px;
+  font-weight: 100;
+  padding: 0;
+}
+.message-box .textfield::-webkit-input-placeholder {
+  color: $color-white;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-dashboard-nav-item {
+  width: 90px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-right: 26px;
+  border-bottom: solid 3px transparent;
+}
+.page-dashboard-nav-item-active {
+  border-color: $color-lightgreen;
+}
+.page-dashboard-nav-link {
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-gray--light;
+  letter-spacing: 1.1px;
+}
+.page-dashboard-nav-item-active > .page-dashboard-nav-link {
+  color: $color-white;
+}
+
+.page-dashboard-view-options {
+  float: right;
+  margin-right: -3px;
+  margin-top: 4px;
+}
+
+.page-dashboard-nav {
+  position: relative;
+  top: -51px;
+}

@@ -2,76 +2,61 @@
   background-color: #262728;
   height: 60px;
   box-sizing: border-box;
+}
+.app-header-left {
+  margin-top: 18px;
+  margin-left: 77px;
+}
+.app-header-right {
+  margin-top: 14px;
+  margin-right: 62px;
+}
 
-  .app-header-left {
-    float: left;
-    margin-top: 18px;
-    margin-left: 77px;
-  }
-  .app-header-right {
-    float: right;
-    margin-top: 14px;
-    margin-right: 62px;
-  }
+.brand-title {
+  margin: -2px 0 0 6px;
+}
+.brand-title-alt {
+  color: $color-gray--light;
+  margin-left: -3px;
+}
 
-  .brand-title {
-    margin: -2px 0 0 6px;
-  }
-  .brand-title-link {
-    color: $color-subheadline;
-    font-size: 18px;
-    font-weight: 100;
-  }
-  .brand-title-alt {
-    color: $color-gray--light;
-    margin-left: -0.4rem;
-  }
+.app-header-search {
+  margin-left: 18px;
+  margin-right: 15px;
+  position: relative;
+}
+.app-header-search-input {
+  background: transparent;
+  border: solid 1px $color-gray--dark;
+  border-radius: 4px;
+  height: 30px;
+  width: 200px;
+  color: $color-white;
+}
+.app-header-search-icon {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+}
+.app-header-list-item {
+  padding: 9px 35px 7px 10px;
+  border-bottom: solid 1px $color-gray--lighter;
+}
 
-  .chat-icon {
-    margin-top: 4px;
-  }
-
-  .search {
-    margin-left: 18px;
-    margin-right: 15px;
-    position: relative;
-  }
-  .search-input {
-    background: transparent;
-    border: solid 1px $color-gray--dark;
-    border-radius: 4px;
-    height: 26px;
-    width: 200px;
-  }
-  .search-icon {
-    position: absolute;
-    right: 5px;
-    top: 4px;
-  }
-
-  .caret-down-icon {
-    vertical-align: top;
-    margin-top: 12px;
-    margin-left: 8px;
-  }
-  .dropdown {
-    background-color: $color-settingsDropdown;
-    position: absolute;
-    right: 42px;
-    top: 55px;
-    border-radius: 4px;
-  }
-  .dropdown-caret {
-    position: relative;
-    top: 4px;
-    left: 44px;
-  }
-  .list-item {
-    padding: 9px 35px 7px 10px;
-    border-bottom: solid 1px $color-gray--lighter;
-  }
-  .link {
-    color: $color-subheadline;
-    font-size: 13px;
-  }
+.app-header-caret-down {
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 8px;
+}
+.app-header-dropdown {
+  background-color: $color-offwhite--dark;
+  position: absolute;
+  right: 42px;
+  top: 55px;
+  border-radius: 4px;
+}
+.app-header-dropdown-caret {
+  position: relative;
+  top: 4px;
+  left: 44px;
 }

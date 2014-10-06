@@ -2,19 +2,19 @@ $color-lightgreen: #00b286;
 $color-green: #01B286;
 
 $color-offwhite: #f9fafb;
+$color-offwhite--dark: #F4F5F7;
 $color-offwhite--darker: #eef0f2;
 
 $color-gray: #70767f;
 $color-gray--lighter: #dee1e5;
 $color-gray--light: #bec3cc;
 $color-gray--dark: #44474b;
+$color-gray--blue: #3f454d;
+$color-gray--lightblue: #70767f;
 
 $color-white: #fff;
 
-$color-modalBackdrop: rgba(10, 10, 10, 1);
-$color-settingsDropdown: #F4F5F7;
+$color-offblack: #0a0a0a;
 
-$color-headline: #3f454d;
-$color-subheadline: #70767f;
-
-$color-postAuthor: #3f454d;
+.bgcolor-offwhite { background-color: $color-offwhite; }
+.color-graylight { color: $color-gray--light; }

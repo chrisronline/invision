@@ -1,75 +1,74 @@
-<div class="page-dashboard">
-  <div class="page-dashboard-header">
-    <div class="message-box layout-middle">
-      <input type="text" class="textfield" placeholder="What's on your mind?"/>
-      <div class="message-uploads">
-        <div class="upload-photo">
-          <div class="camera-icon icon"></div>
-          <a href="#" class="link">Add Photo</a>
-        </div>
-        <div class="upload-video">
-          <div class="video-icon icon"></div>
-          <a href="#" class="link">Add Video</a>
-        </div>
+<div class="page-dashboard-header">
+  <div class="message-box layout-middle">
+    <input type="text" class="textfield" placeholder="What's on your mind?"/>
+    <div class="space-above--large text-left">
+      <div class="inline-block-top aliased-light space-right--large">
+        <div class="camera-icon icon space-right--xsmall"></div>
+        <a href="#" class="link">Add Photo</a>
+      </div>
+      <div class="inline-block-top aliased-light space-right--large">
+        <div class="video-icon icon space-right--xsmall"></div>
+        <a href="#" class="link">Add Video</a>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="page-dashboard-nav layout-middle">
-    <nav class="page-dashboard-nav-element">
-      <ul class="list">
-        <li class="list-horizontal-item page-dashboard-nav-item" ng-class="{'page-dashboard-nav-item-active': page == 'all'}">
-          <a href="#/dashboard/all" class="link page-dashboard-nav-link">all posts</a>
-        </li>
-        <li class="list-horizontal-item page-dashboard-nav-item" ng-class="{'page-dashboard-nav-item-active': page == 'photos'}">
-          <a href="#/dashboard/photos" class="link page-dashboard-nav-link">photos</a>
-        </li>
-        <li class="list-horizontal-item page-dashboard-nav-item" ng-class="{'page-dashboard-nav-item-active': page == 'videos'}">
-          <a href="#/dashboard/videos" class="link page-dashboard-nav-link">videos</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="page-dashboard-view-options">
-      <ul class="list">
-        <li class="list-horizontal-item"><a href="#" class="icon list-icon"></a></li>
-        <li class="list-horizontal-item"><a href="#" class="icon grid-icon"></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="page-dashboard-content" ng-switch="page">
-    <div ng-switch-when="all" class="layout-middle">
-      <article ng-repeat="post in posts track by post.id" class="post"
-        ng-include="'components/post/post.template.html'" ng-controller="PostController"></article>
-    </div>
-    <div ng-switch-when="photos" class="layout-wide">
-      <article ng-repeat="post in photos track by post.id" post-cell="post" class="inline-block-top border-box"></article>
-    </div>
-    <div ng-switch-when="videos" class="layout-wide">
-      <article ng-repeat="post in videos track by post.id" post-cell="post" class="inline-block-top border-box"></article>
-    </div>
-  </div>
-
-  <hr class="breaker space-above--large space-below--medium"/>
-  <div class="page-dashboard-footer layout-middle">
+<div class="page-dashboard-nav layout-middle clearfix">
+  <nav class="pull-left">
     <ul class="list">
-      <li class="list-horizontal-item">
-        <a href="#" class="link">about us</a>
+      <li class="list-horizontal-item pad-v3-h1 page-dashboard-nav-item" ng-class="{'page-dashboard-nav-item-active': page == 'all'}">
+        <a href="#/dashboard/all" class="link page-dashboard-nav-link">all posts</a>
       </li>
-      <li class="list-horizontal-item">
-        <a href="#" class="link">support</a>
+      <li class="list-horizontal-item pad-v3-h1 page-dashboard-nav-item" ng-class="{'page-dashboard-nav-item-active': page == 'photos'}">
+        <a href="#/dashboard/photos" class="link page-dashboard-nav-link">photos</a>
       </li>
-      <li class="list-horizontal-item">
-        <a href="#" class="link">privacy</a>
-      </li>
-      <li class="list-horizontal-item">
-        <a href="#" class="link">terms</a>
-      </li>
-      <li class="list-horizontal-item">
-        <span class="copyright">
-          <span class="copyright-copysign">&copy;</span> <span class="copyright-year">2014</span> simplysocial</span>
+      <li class="list-horizontal-item pad-v3-h1 page-dashboard-nav-item" ng-class="{'page-dashboard-nav-item-active': page == 'videos'}">
+        <a href="#/dashboard/videos" class="link page-dashboard-nav-link">videos</a>
       </li>
     </ul>
+  </nav>
+
+  <div class="page-dashboard-view-options">
+    <ul class="list">
+      <li class="list-horizontal-item pad-v3-h1"><a href="#" class="icon list-icon"></a></li>
+      <li class="list-horizontal-item pad-v3-h1"><a href="#" class="icon grid-icon"></a></li>
+    </ul>
   </div>
+</div>
+
+<div class="clearfix" ng-switch="page">
+  <div ng-switch-when="all" class="layout-middle">
+    <article ng-repeat="post in posts track by post.id" class="post"
+      ng-include="'components/post/post.template.html'" ng-controller="PostController"></article>
+  </div>
+  <div ng-switch-when="photos" class="layout-wide">
+    <article ng-repeat="post in photos track by post.id" post-cell="post" class="inline-block-top border-box"></article>
+  </div>
+  <div ng-switch-when="videos" class="layout-wide">
+    <article ng-repeat="post in videos track by post.id" post-cell="post" class="inline-block-top border-box"></article>
+  </div>
+</div>
+
+<hr class="breaker space-above--large space-below--medium"/>
+<div class="text-center layout-middle">
+  <ul class="list">
+    <li class="list-horizontal-item pad-v3-h1">
+      <a href="#" class="link link-lightgreen strong-smallcaps">about us</a>
+    </li>
+    <li class="list-horizontal-item pad-v3-h1">
+      <a href="#" class="link link-lightgreen strong-smallcaps">support</a>
+    </li>
+    <li class="list-horizontal-item pad-v3-h1">
+      <a href="#" class="link link-lightgreen strong-smallcaps">privacy</a>
+    </li>
+    <li class="list-horizontal-item pad-v3-h1">
+      <a href="#" class="link link-lightgreen strong-smallcaps">terms</a>
+    </li>
+    <li class="list-horizontal-item pad-v3-h1">
+      <span class="aliased-smooth strong-smallcaps">
+        <span class="font-small">&copy;</span> <span class="font-small">2014</span> simplysocial
+      </span>
+    </li>
+  </ul>
 </div>

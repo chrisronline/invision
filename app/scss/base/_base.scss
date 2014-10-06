@@ -25,11 +25,6 @@ a {
   cursor: pointer;
 }
 
-.link {
-  text-decoration: none;
-  color: $color-white;
-}
-
 .inline-block-top {
   display: inline-block;
   vertical-align: top;
@@ -51,21 +46,12 @@ a {
 .pull-right {
   float: right;
 }
+.pull-left {
+  float: left;
+}
 
 .breaker {
   background-color: $color-gray--lighter;
   height: 1px;
   border: none;
 }
-
-
-
-.small-space-below {
-  margin-bottom: 5px;
-}
-.space-below--medium { margin-bottom: 20px; }
-.space-below--large { margin-bottom: 35px; }
-.space-below--xlarge { margin-bottom: 50px; }
-
-.space-above--large { margin-top: 28px }
-.space-above--xlarge { margin-top: 50px }

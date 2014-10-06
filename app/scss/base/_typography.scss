@@ -1,20 +1,56 @@
 .headline {
-  margin: 45px 0;
   font-size: 32px;
   font-weight: 100;
-  color: $color-headline;
+  color: $color-gray--blue;
 }
 .subheadline {
   font-family: 'ProximaNova';
   font-size: 13px;
   text-transform: uppercase;
   font-weight: 500;
-  color: $color-subheadline;
+  color: $color-gray--lightblue;
 }
-.btn-subtle-text {
+.aliased-light {
+  font-weight: 100;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+.aliased-smooth {
+  font-size: 14px;
+  color: $color-gray;
+  -webkit-font-smoothing: antialiased;
+}
+.strong-smallcaps {
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+.subtle-text {
   color: $color-gray--light;
   font-size: 13px;
   font-weight: 100;
+}
+.subtle-text--blue {
+  color: $color-gray--blue;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.link {
+  text-decoration: none;
+  color: $color-white;
+}
+.link-lightblue {
+  color: $color-gray--lightblue;
+  font-size: 13px;
+}
+.link-lightgreen {
+  color: $color-lightgreen;
+  font-size: 16px;
+}
+
+.font-small {
+  font-size: 12px;
 }
 .lowercase {
   text-transform: lowercase;
