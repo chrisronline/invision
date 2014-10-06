@@ -50,6 +50,7 @@
 }
 .radio:checked + label .radio-control-circle {
   background: $color-lightgreen;
+  opacity: 1;
 }
 .radio + label .radio-control {
   cursor: pointer;
@@ -69,6 +70,8 @@
   border-radius: 50px;
   margin-left: 3px;
   margin-top: 3px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .switch {
@@ -76,10 +79,10 @@
 }
 .switch:checked + label .switch-control {
   background: $color-lightgreen;
-  text-align: right;
 }
 .switch:checked + label .switch-control-circle {
   margin-right: 1px;
+  transform: translate(100%);
 }
 .switch + label .switch-control {
   cursor: pointer;
@@ -90,6 +93,7 @@
   border-radius: 50px;
   background: $color-gray--lighter;
   margin-right: 19px;
+  transition: background-color 0.3s ease;
 }
 .switch + label .switch-control-circle {
   display: inline-block;
@@ -99,4 +103,6 @@
   background: $color-white;
   margin-top: 1px;
   margin-left: 1px;
+  transform: translate(0%);
+  transition: transform 0.3s ease;
 }
