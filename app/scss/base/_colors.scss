@@ -16,5 +16,6 @@ $color-white: #fff;
 
 $color-offblack: #0a0a0a;
 
-.bgcolor-offwhite { background-color: $color-offwhite; }
-.color-graylight { color: $color-gray--light; }
+.bgcolor-offwhite { background-color: $color-offwhite !important; }
+.color-gray { color: $color-gray !important; }
+.color-graylight { color: $color-gray--light !important; }
